@@ -135,6 +135,9 @@ const checkCommand = applyGenerateOptions(
 		);
 });
 
+console.log("env_package_version", process.env.npm_package_version);
+console.log("env_package_description", process.env.npm_package_description);
+
 const command = createCommand("typedotenv")
 	// biome-ignore lint/style/noNonNullAssertion: <explanation>
 	.version(process.env.npm_package_version!)
